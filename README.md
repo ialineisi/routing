@@ -16,7 +16,7 @@
 - `});`
 ### ex.2
 - `Route::get('/', [HomeController::class, 'index']);`
-- ### ex.3
+### ex.3
 - `Route::post('/submit', function () {`
 - `return $_POST['name'];`
 - `});`
