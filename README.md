@@ -24,12 +24,12 @@
 ### you can set not found page by using 
 - `Route::notFoundPath($path);`
 ### set named routes by using name method after routing, for example:
-- ``` Route::get('/', function () { ```
-- ```   return 'Hello World'; ```
-- ``` })->name('index'); ```
-and to use it:
+- ` Route::get('/', function () { `
+- `   return 'Hello World'; `
+- ` })->name('index'); `
+#### and to use it:
 - `\Alineisi\routeName('index');`
 ### you can also returning views by using
 - `Route::view('/', 'index');`
-or
+#### or
 - `Route::view('/', 'index.php');`
