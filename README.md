@@ -27,7 +27,7 @@
 - ``` })->name('index'); ```
 #### and to use it:
 - `\Alineisi\routeName('index');`
-- ### you can also returning views by using
+### you can also returning views by using
 - `Route::view('index');`
 #### or
 - `Route::view('index.php');`
