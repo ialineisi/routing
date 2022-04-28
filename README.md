@@ -6,9 +6,9 @@
 ## To get started
 - `require_once __DIR__ . '/vendor/autoload.php';`
 - `use Alineisi\Route;`
-- be sure adding
+be sure adding
 - `Route::dispatch();`
-- end of index.php
+end of index.php
 ## Usage
 ### ex.1
 - `Route::get('/', function () {`
