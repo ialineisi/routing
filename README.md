@@ -28,6 +28,6 @@
 #### and to use it:
 - `\Alineisi\routeName('index');`
 ### you can also returning views by using
-- `Route::view('index');`
+- `Route::view('/', 'index');`
 #### or
-- `Route::view('index.php');`
+- `Route::view('/', 'index.php');`
