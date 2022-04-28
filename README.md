@@ -9,7 +9,7 @@
 - be sure putting `Route::dispatch();` end of index.php
 ## Usage
 - ### ex.1
-` `Route::get('/', function () {
+` `Route::get('/', function () {`
 - `return 'Hello World';`
 - `});`
 - ### ex.2
