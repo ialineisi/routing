@@ -4,7 +4,7 @@
 ## Installation
 - `composer require alineisi/router`
 ## To get started
-- `require_once __DIR__ . '/vendor/autoload.php;`
+- `require_once __DIR__ . '/vendor/autoload.php';`
 - `use Alineisi\Route;`
 - be sure putting `Route::dispatch();` end of index.php
 ## Features
