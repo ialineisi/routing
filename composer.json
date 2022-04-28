@@ -1,0 +1,19 @@
+{
+  "name": "alineisi/router",
+  "description": "this package is used to implement routing system with a lot of cool features !!!",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Alineisi\\": "AliNeisi/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Ali Neisi",
+      "email": "neisiali07@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {}
+}
