@@ -3,7 +3,6 @@
 namespace Alineisi;
 
 use ReflectionMethod;
-use RuntimeException;
 
 function routeName($name)
 {
@@ -86,7 +85,7 @@ class Route
                         $result = (new $class)->$function();
                 } else
                     $result = $callback();
-                if (is_string($result)) echo $result;
+                if (is_string($result)) (new self)->jsonResponse($result);
                 break;
             case
             'view':
@@ -97,11 +96,16 @@ class Route
         }
     }
 
+    protected function jsonResponse($data) {
+        header('Content-type: application/json');
+        echo json_encode($data);
+    }
+
     protected static function abort()
     {
         http_response_code(404);
         $path = self::$path_to_notfound_page;
-        if ($path == '') echo 'Not Found';
+        if ($path == '') (new self)->jsonResponse('Not Found.');
         else self::getView($path);
         die;
     }
